@@ -50,6 +50,15 @@ st.map(df)
 
 st.write('Display Image')
 
+# サイドバーに表示させる
+# condition = st.sidebar.slider('あなたの今の調子は？', 0, 100, 50)
+
+# 2カラム表示
+left_column, right_column = st.beta_columns(2)
+button = left_column.button('右カラムを表示')
+if button:
+  right_column.write('右カラム')
+
 condition = st.slider('あなたの今の調子は？', 0, 100, 50)
 'コンディション : ', condition
 
