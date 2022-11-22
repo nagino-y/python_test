@@ -59,6 +59,9 @@ button = left_column.button('右カラムを表示')
 if button:
   right_column.write('右カラム')
 
+expander = st.beta_expander('問い合わせ')
+expander.write('問い合わせ内容を書く')
+
 condition = st.slider('あなたの今の調子は？', 0, 100, 50)
 'コンディション : ', condition
 
